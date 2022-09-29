@@ -57,6 +57,7 @@ header {
 header > div {
   display: flex;
   flex-direction: row;  
+  margin-left: 40px;
 }
 
 .header-img {
@@ -67,28 +68,35 @@ header > div {
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 80%;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 20px;
   }
   
   td, th {
-    border: 1px solid #dddddd;
     text-align: left;
-    padding: 8px;
+    padding: 14px;
   }
   
   tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #c9c1c1;
   }
 
   footer {
-    height: 100px;
-    width: auto;
-    background-color: aqua;
+    height: 20%;
+    width: 100%;
+    background-color: rgb(24, 124, 218);
     display: flex;
     flex-direction: row;
     justify-items: flex-end;
-    position: static;
     bottom: 0;
+    position: absolute;
+    color: whitesmoke;
+  }
+
+  footer h5 {
+    margin-top: 20px;
   }
 
   nav {
@@ -107,7 +115,7 @@ table {
   .sidebar {
     position: absolute;
     left: 0;
-    height: 100%;
+    height: 88%;
     width: 50px;
     background-color: #dddddd;
     display: flex;
@@ -122,10 +130,11 @@ table {
 
   .music-card {
     display: flex;
+    width: 20%;
   }
   .music-cover {
-    width: 20%;
-    height: 20%;
+    width: 80%;
+    margin: 20px;
   }
 
   .heading {
@@ -137,3 +146,21 @@ table {
     margin-bottom: 12px;
   }
 
+.options {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  vertical-align: middle;
+  margin-top: 3%;
+  margin-left: 20%;
+}
+
+.menu-options ul {
+  list-style: none;
+  margin-top: 100px;
+}
+
+.menu-options li {
+  display: inline;
+  margin-right: 20px;
+}
