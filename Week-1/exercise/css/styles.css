@@ -46,3 +46,63 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+header {
+    background-color: #333;
+    height: auto;
+    width: auto;
+    color: white;
+}
+
+header > div {
+  display: flex;
+  flex-direction: row;  
+}
+
+.header-img {
+    padding: 4px;
+    margin: 10px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  footer {
+    height: 100px;
+    width: auto;
+    background-color: aqua;
+  }
+
+  nav {
+    display: block;
+    margin:1px;
+  }
+
+  .sidebar {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 50px;
+    background-color: #dddddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  i {
+    font-size: 1.2em;
+  }
