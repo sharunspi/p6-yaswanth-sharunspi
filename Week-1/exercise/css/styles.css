@@ -61,7 +61,7 @@ header > div {
 
 .header-img {
     padding: 4px;
-    margin: 10px;
+    margin: 30px;
 }
 
 table {
@@ -84,11 +84,24 @@ table {
     height: 100px;
     width: auto;
     background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-end;
+    position: static;
+    bottom: 0;
   }
 
   nav {
     display: block;
     margin:1px;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  h5 {
+    font-size: 1em;
   }
 
   .sidebar {
@@ -106,3 +119,21 @@ table {
   i {
     font-size: 1.2em;
   }
+
+  .music-card {
+    display: flex;
+  }
+  .music-cover {
+    width: 20%;
+    height: 20%;
+  }
+
+  .heading {
+    margin-top: 30px;
+  }
+
+  div.details > h5 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
