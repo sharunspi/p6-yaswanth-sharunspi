@@ -25,6 +25,38 @@ In this case all the data send from the server will reach to our machine . This 
 ## 5. Render whatever the content send by server in to the browser
 Render is the time were we see the content in a browser . for parsing HTML,CSS and JS. there are parser and interpreters . These tools parse the data and show in browser . 
 
+
+## Handling data transit and data rendering
+
+### Data Transit
+![internet](internet.png)
+
+Here i have simplified the data transit to 4 parts
+1. Sending the Url to DNS server to identify the ip
+2. DNS server sending the ip address
+3. Browser sending this ip to identify the hosted sever and asking for the data
+4. Server sending the required data like HTML,CSS, JS and images 
+
+### Data rendering
+
+There are basically two step for this Parsing and Rendering
+Parsing is the step where HTML,CSS,JS is parsing to the required way
+Rendering is the step where the parsed datas are convering to DOM tree and it's layouts
+
+![browser](browser.png)
+
+1. The rendering engine starts getting the contents of the requested document from the networking layer. 
+2. A DOM tree is built out of the broken response.
+3. New requests are made to the server for each new resource that is found in the HTML source (typically images, style sheets, and JavaScript files).
+4. At this stage the browser marks the document as interactive and starts parsing scripts that are in "deferred" mode: those that should be executed after the document is parsed. The document state is set to "complete" and a "load" event is fired.
+5. Each CSS file is parsed into a StyleSheet object, where each object contains CSS rules with selectors and objects corresponding to CSS grammar. The tree built is called CSSCOM.
+6. On top of DOM and CSSOM, a rendering tree is created, which is a set of objects to be rendered. Each of the rendering objects contains its corresponding DOM object (or a text block) plus the calculated styles. In other words, the render tree describes the visual representation of a DOM.
+7. After the construction of the render tree it goes through a "layout" process. Which means giving each node the exact coordinates where it should appear on the screen.
+8. The next stage is painting–the render tree will be traversed and each node will be painted using the UI backend layer.
+9. Repaint: When changing element styles that don't affect the element's position on a page (such as background-color, border-color, visibility), the browser just repaints the element again with the new styles applied (that means a "repaint" or "restyle" is happening).
+10. Reflow: When the changes affect document contents or structure, or element position, a reflow (or relayout) happens.
+
+
 ## Other topics
 These are so many points , we have to dicuss , something like security, protocols, SSL, server side rendering and client side rendering 
  
@@ -50,4 +82,4 @@ These are so many points , we have to dicuss , something like security, protocol
 ## Reference
 1. https://aws.amazon.com/blogs/mobile/what-happens-when-you-type-a-url-into-your-browser/
 
-2.  
+2.  https://dev.to/shwetabh1/complete-webpage-rendering-process-in-browser-59l1
