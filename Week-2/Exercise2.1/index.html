@@ -80,33 +80,36 @@
         <label for="title"> Miss <input type="radio" id="title" /> </label>
 
         <label for="firstName">
-          First name <input type="text" id="firstName" name="firstName" />
+          First name
+          <input type="text" id="firstName" name="firstName" required />
         </label>
         <label for="lastName">
-          Last name <input type="text" id="lastName" name="lstName" />
+          Last name <input type="text" id="lastName" name="lstName" required />
         </label>
         <label for="email">
-          Email <input type="email" id="email" name="email" />
+          Email <input type="email" id="email" name="email" required />
         </label>
         <label for="phoneNumber">
-          Phone number <input type="tel" id="phoneNumber" name="phoneNumber" />
+          Phone number
+          <input type="tel" id="phoneNumber" name="phoneNumber" required />
         </label>
         <label for="password">
-          Password <input type="password" id="password" name="password" />
+          Password
+          <input type="password" id="password" name="password" required />
         </label>
         <label for="rePassword">
           Confirm your password
-          <input type="password" id="rePassword" name="rePassword" />
+          <input type="password" id="rePassword" name="rePassword" required />
         </label>
         <label for="country">
           Country
-          <select name="country" id="country">
+          <select name="country" id="country" required>
             <option value="canada">Canada</option>
             <option value="india">India</option>
           </select>
         </label>
         <label for="iat">
-          <input type="checkbox" id="iat" name="iat" /> I agree to the
+          <input type="checkbox" id="iat" name="iat" required /> I agree to the
           <a href="">terms and conditions</a>
         </label>
         <label for="submit">
