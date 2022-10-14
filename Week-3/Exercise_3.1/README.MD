@@ -1,5 +1,11 @@
 # Memorize
 
+## How to run
+
+```
+node memorize
+```
+
 ## How to excute function
 
 Copy the function and pass arguments to find the multiply value
