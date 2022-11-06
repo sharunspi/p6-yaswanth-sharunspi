@@ -1,3 +1,7 @@
-function vowelCount(text) {
-  const vMap = new Map();
-}
+function doTask1() {}
+
+function doTask2() {}
+
+function doTask3() {}
+
+function asyncAwait() {}
