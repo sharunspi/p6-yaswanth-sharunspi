@@ -1,0 +1,14 @@
+{
+  "name": "exercise_5.4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "sharun1",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.2.2"
+  }
+}
