@@ -1,12 +1,33 @@
 function spiral(arg) {
   let final = [];
-  for (let i = 0; i <= arg.length; i++) {
-    for (let j = 0; j <= 3; j++) {
-      if (i < j) {
-        final.push(arg[i][j]);
+  let length = arg.length;
+  let subLength = arg[0].length;
+  let p = 0;
+  let i;
+  let q = 0;
+  while (p < length && q < subLength) {
+    for (i = q; i < subLength; ++i) {
+      final.push(arg[p][i]);
+    }
+    p++;
+    for (i = p; i < length; ++i) {
+      final.push(arg[i][subLength - 1]);
+    }
+    subLength--;
+    if (p < length) {
+      for (i = subLength - 1; i >= subLength; --i) {
+        final.push(arg[length - 1][i]);
       }
+      length--;
+    }
+    if (q < subLength) {
+      for (i = length - 1; i >= p; --i) {
+        final.push(arg[i][q]);
+      }
+      q++;
     }
   }
+
   return final;
 }
 
