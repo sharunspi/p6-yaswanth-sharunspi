@@ -1,29 +1,39 @@
-function spiral(arg) {
-  let final = [];
-  let length = arg.length;
-  let subLength = arg[0].length;
-  let p = 0;
+function spiral(arr, m, n) {
   let i;
+  let p = 0;
   let q = 0;
-  while (p < length && q < subLength) {
-    for (i = q; i < subLength; ++i) {
-      final.push(arg[p][i]);
+  let final = [];
+  // p => row start index
+  // q => column start index
+  // m => end row ; starting with row length
+  // n => end column ; starting with column length
+  // i => intrators
+
+  while (p < m && q < n) {
+    // first row
+    for (i = q; i < n; ++i) {
+      final.push(arr[p][i]);
     }
+    // increase row index by 1
     p++;
-    for (i = p; i < length; ++i) {
-      final.push(arg[i][subLength - 1]);
+    // last column
+    for (i = p; i < m; ++i) {
+      final.push(arr[i][n - 1]);
     }
-    subLength--;
-    if (p < length) {
-      for (i = subLength - 1; i >= subLength; --i) {
-        final.push(arg[length - 1][i]);
+    // decrease column end by 1
+    n--;
+    if (p < m) {
+      for (i = n - 1; i >= q; --i) {
+        final.push(arr[m - 1][i]);
       }
-      length--;
+      // decrease end of row by 1
+      m--;
     }
-    if (q < subLength) {
-      for (i = length - 1; i >= p; --i) {
-        final.push(arg[i][q]);
+    if (q < n) {
+      for (i = m - 1; i >= p; --i) {
+        final.push(arr[i][q]);
       }
+      // increase column start by 1
       q++;
     }
   }
@@ -31,10 +41,15 @@ function spiral(arg) {
   return final;
 }
 
-console.log(
-  spiral([
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9],
-  ])
-);
+// Time complaxity : O(m*n)
+// Space complaxity : O(1)
+
+// arguments is (array, no of rows, no of columns)
+let array = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+let noOfRows = array.length;
+let noOfColumns = array[0].length;
+console.log(spiral(array, noOfRows, noOfColumns));

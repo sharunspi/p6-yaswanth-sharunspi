@@ -19,6 +19,6 @@ function sortArray(arr) {
 }
 
 // Time complaxity : O(n)
-// Space complaxity : O(0)
+// Space complaxity : O(3n)
 
 console.log(sortArray([1, 0, 0, 1, 2, 1]));
