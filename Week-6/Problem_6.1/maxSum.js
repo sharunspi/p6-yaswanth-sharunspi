@@ -16,4 +16,7 @@ function maxSumSubArray(arg) {
   return maximum;
 }
 
+// Time complaxity : O(n)
+// Space complaxity : O(1)
+
 console.log(maxSumSubArray([1, 2, 4, -5, 4, 1, 455, 45]));
