@@ -37,3 +37,7 @@ printLinkeList(head);
 head = reverse(head);
 console.log("Reversed list");
 printLinkeList(head);
+
+// ......
+// Time Complexity : O(n)
+// Space Complexity : O(1)
