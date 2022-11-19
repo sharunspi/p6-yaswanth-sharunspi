@@ -15,3 +15,7 @@ function nextGreaterElement(array, n) {
 var newArray = [11, 13, 21, 3];
 var n = newArray.length;
 nextGreaterElement(newArray, n);
+
+// ......
+// Time Complexity : O(n^2)
+// Space Complexity : O(1)

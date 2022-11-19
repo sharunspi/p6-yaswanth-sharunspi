@@ -38,3 +38,6 @@ function checker(exprsion) {
 let input = "([{}])";
 
 console.log(" Output :", checker(input));
+// ......
+// Time Complexity : O(n)
+// Space Complexity : O(n)
