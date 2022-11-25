@@ -15,9 +15,11 @@ function Node(content) {
 }
 
 function findTheDepth(ele) {
+  // if the element is null
   if (ele == null) {
     return 0;
   } else {
+    // find depth of side with recursion
     let leftDepth = findTheDepth(ele.leftSide);
     let rightDepth = findTheDepth(ele.rightSide);
     if (leftDepth > rightDepth) {
