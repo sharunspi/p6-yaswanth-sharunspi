@@ -1,9 +1,13 @@
-Given the root of a binary tree, return its maximum depth.A binary tree's maximum depth is the number of nodes along the longest path from theroot node down to the farthest leaf node.
+Given the root of a binary tree, determine if it is a valid binary search tree (BST).
+A valid BST is defined as follows:
+The left subtree of a node contains only nodes with keys less than the node's key.
+Theright subtree of a node contains only nodes with keys greater than the node's key.
+Boththe left and right subtrees must also be binary search trees.
 Example 1:
-Input: root = [3,9,20,null,null,15,7]
-Output: 3
+Input: root = [2,1,3]
+Output: true
 Example 2:
-Input: root = [1,null,2]
-Output: 2
-Constraints:●The number of nodes in the tree is in the range [0, 104].●
-100 <= Node.val <= 100
+Input: root = [5,1,4,null,null,3,6]
+Output: false
+Explanation: The root node's value is 5 but its right child's value is 4.
+Constraints:●The number of nodes in the tree is in the range [1, 104].●231<= Node.val <= 231- 1
