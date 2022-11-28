@@ -1,7 +1,11 @@
-import "./App.css";
+import Home from "./Page/Home";
 
 function App() {
-  return <div className="App text-black">fsdfsd</div>;
+  return (
+    <div className="w-full h-full">
+      <Home />
+    </div>
+  );
 }
 
 export default App;
