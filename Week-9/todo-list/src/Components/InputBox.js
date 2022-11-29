@@ -7,7 +7,7 @@ function InputBox({ onChangeText, value }) {
       name="input"
       value={value}
       onChange={onChangeText}
-      className="bg-[#EDCBD2] text-[#80C4B7] text-2xl "
+      className="bg-[#EDCBD2] text-[#80C4B7] text-2xl border border-[#E3856B]"
     />
   );
 }
