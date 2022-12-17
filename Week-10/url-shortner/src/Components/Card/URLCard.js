@@ -5,18 +5,30 @@ import { RundedButton } from "../Button/RundedButton";
 import { createShortUrl } from "../Api/api";
 import { isValidUrl } from "../../Util";
 
-function URLCard() {
+function URLCard(props) {
   const ref = useRef();
-  const [showUrlValidErro, setShowUrValidError] = useState(false);
+  const [showUrlValidError, setShowUrValidError] = useState(false);
+
   const shortUrl = () => {
     const url = ref.current.value;
     if (isValidUrl(url)) {
-      createShortUrl()
+      props.setUrl(url);
+      props.loadStarter(true);
+
+      createShortUrl(url)
         .then((res) => {
-          console.log(res.data);
+          if (res.data.ok) {
+            props.shortenUrl(res.data.result.short_link);
+          }
         })
-        .catch((err) => console.log(err))
-        .finally(() => setShowUrValidError(false));
+        .catch((err) => {
+          alert("Error while creating url");
+          console.log(err);
+        })
+        .finally(() => {
+          props.loadStarter(false);
+          setShowUrValidError(false);
+        });
     } else {
       setShowUrValidError(true);
     }
@@ -32,8 +44,9 @@ function URLCard() {
             required
             ref={ref}
             className="input-url"
+            // value={textVal}
           />
-          {showUrlValidErro && <span className="error">In valid url</span>}
+          {showUrlValidError && <span className="error">In valid url</span>}
         </div>
         <RundedButton onClick={shortUrl}>Shorten url</RundedButton>
       </div>

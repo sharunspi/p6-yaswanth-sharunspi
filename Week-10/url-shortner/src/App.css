@@ -7,6 +7,7 @@ header {
   display: flex;
   padding: 4px 10px 4px 10px;
   background-color: white;
+  justify-content: space-around;
 }
 header .brand {
   margin-left: 100px;
@@ -66,11 +67,12 @@ button.btn {
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
   cursor: pointer;
+  border: none;
 }
 button.btn-rounded {
   border: 2px solid rgb(75, 49, 189);
   border-radius: 16px;
-  padding: 4px 6px 4px 6px;
+  padding: 6px 8px 6px 8px;
   color: #f1f1f1;
   background-color: rgb(20, 181, 192);
 }
@@ -89,4 +91,38 @@ button.btn-rounded {
   color: rgb(221, 50, 50);
   font-size: 12px;
   margin-top: 4px;
+}
+.btn-normal {
+  border-radius: 4px;
+  padding: 12px;
+  background-color: rgb(20, 181, 192);
+  color: #f1f1f1;
+  font-size: 1.5em;
+}
+
+.text-blue {
+  color: rgb(20, 181, 192);
+  font-size: 1.2em;
+  font-weight: 800;
+}
+.login {
+  display: flex;
+  justify-content: space-between;
+}
+.ml {
+  margin-left: 10px;
+}
+.copied {
+  color: rgb(20, 181, 192);
+  font-size: 10px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(77, 71, 71);
+  color: white;
+}
+footer .left-side {
+  margin-top: 24px;
+  margin-right: 12px;
 }

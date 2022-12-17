@@ -1,5 +1,9 @@
 import React from "react";
 
 export const Button = (props) => {
-  return <button>{props.children}</button>;
+  return (
+    <button type="button" onClick={props.onClick} className="btn btn-normal">
+      {props.children}
+    </button>
+  );
 };
