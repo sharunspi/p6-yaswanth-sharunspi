@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/p6-yaswanth-sharunspi/tree/week-10/Week-10/url-shortner/static/css/main.a8a47993.css",
-    "main.js": "/p6-yaswanth-sharunspi/tree/week-10/Week-10/url-shortner/static/js/main.d29de55f.js",
-    "static/js/787.c98d45da.chunk.js": "/p6-yaswanth-sharunspi/tree/week-10/Week-10/url-shortner/static/js/787.c98d45da.chunk.js",
-    "static/media/undraw_link_shortener.svg": "/p6-yaswanth-sharunspi/tree/week-10/Week-10/url-shortner/static/media/undraw_link_shortener.858e49e287613268da4f0f0ed684d19d.svg",
-    "index.html": "/p6-yaswanth-sharunspi/tree/week-10/Week-10/url-shortner/index.html",
-    "main.a8a47993.css.map": "/p6-yaswanth-sharunspi/tree/week-10/Week-10/url-shortner/static/css/main.a8a47993.css.map",
-    "main.d29de55f.js.map": "/p6-yaswanth-sharunspi/tree/week-10/Week-10/url-shortner/static/js/main.d29de55f.js.map",
-    "787.c98d45da.chunk.js.map": "/p6-yaswanth-sharunspi/tree/week-10/Week-10/url-shortner/static/js/787.c98d45da.chunk.js.map"
+    "main.css": "/p6-yaswanth-sharunspi/tree/week-10/Week-10/static/css/main.a8a47993.css",
+    "main.js": "/p6-yaswanth-sharunspi/tree/week-10/Week-10/static/js/main.9b23c94f.js",
+    "static/js/787.c98d45da.chunk.js": "/p6-yaswanth-sharunspi/tree/week-10/Week-10/static/js/787.c98d45da.chunk.js",
+    "static/media/undraw_link_shortener.svg": "/p6-yaswanth-sharunspi/tree/week-10/Week-10/static/media/undraw_link_shortener.858e49e287613268da4f0f0ed684d19d.svg",
+    "index.html": "/p6-yaswanth-sharunspi/tree/week-10/Week-10/index.html",
+    "main.a8a47993.css.map": "/p6-yaswanth-sharunspi/tree/week-10/Week-10/static/css/main.a8a47993.css.map",
+    "main.9b23c94f.js.map": "/p6-yaswanth-sharunspi/tree/week-10/Week-10/static/js/main.9b23c94f.js.map",
+    "787.c98d45da.chunk.js.map": "/p6-yaswanth-sharunspi/tree/week-10/Week-10/static/js/787.c98d45da.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a8a47993.css",
-    "static/js/main.d29de55f.js"
+    "static/js/main.9b23c94f.js"
   ]
 }
