@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 function index() {
   return (
     <header>
-      <a href="/">
+      <Link to={"/"}>
         <span className="brand">Shortly</span>
-      </a>
+      </Link>
       <div className="navigation">
         <nav>
-          <a href="/about">
+          <Link to={"/about"}>
             <span>About</span>
-          </a>
+          </Link>
         </nav>
       </div>
       <div className="login">
