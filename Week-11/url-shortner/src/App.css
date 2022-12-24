@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+
+html {
+  font-family: "Nunito", sans-serif;
+}
+header {
+  display: flex;
+  padding: 4px 10px 4px 10px;
+  background-color: white;
+  justify-content: space-around;
+}
+header .brand {
+  margin-left: 100px;
+  margin-top: 8px;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+.main {
+  background-color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+}
+.banner {
+  display: flex;
+  justify-content: center;
+}
+.banner h1 {
+  font-size: 2.6em;
+  font-weight: 400;
+  margin-top: 40px;
+  margin-right: 120px;
+}
+.banner img {
+  width: 20%;
+  height: 20%;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 72%;
+  padding: 4px;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.url-card-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 28px 30px 28px;
+}
+.card-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 120px;
+}
+input.input-url {
+  width: 70%;
+  min-width: 400px;
+  padding: 4px;
+}
+button.btn {
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+  cursor: pointer;
+  border: none;
+}
+button.btn-rounded {
+  border: 2px solid rgb(75, 49, 189);
+  border-radius: 16px;
+  padding: 6px 8px 6px 8px;
+  color: #f1f1f1;
+  background-color: rgb(20, 181, 192);
+}
+.copy-card {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 20px 20px 12px;
+}
+.flex {
+  display: flex;
+}
+.column {
+  flex-direction: column;
+}
+.error {
+  color: rgb(221, 50, 50);
+  font-size: 12px;
+  margin-top: 4px;
+}
+.btn-normal {
+  border-radius: 4px;
+  padding: 12px;
+  background-color: rgb(20, 181, 192);
+  color: #f1f1f1;
+  font-size: 1.5em;
+}
+
+.text-blue {
+  color: rgb(20, 181, 192);
+  font-size: 1.2em;
+  font-weight: 800;
+}
+.login {
+  display: flex;
+  justify-content: space-between;
+}
+.ml {
+  margin-left: 10px;
+}
+.copied {
+  color: rgb(20, 181, 192);
+  font-size: 10px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(77, 71, 71);
+  color: white;
+}
+footer .left-side {
+  margin-top: 24px;
+  margin-right: 12px;
+}
