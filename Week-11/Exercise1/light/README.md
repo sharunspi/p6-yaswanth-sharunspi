@@ -1,5 +1,7 @@
 # ight bulb App
 
+Public web link [Link](https://deluxe-pika-ea1176.netlify.app/)
+
 ## Available Scripts
 
 In the project directory, you can run:

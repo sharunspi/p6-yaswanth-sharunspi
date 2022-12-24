@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Step counter App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Step counter link [Step counter](https://singular-kitsune-1a5bf4.netlify.app/).
 
 ## Available Scripts
 
