@@ -43,3 +43,7 @@ This screenshot shows the render time after optimisation
 ![screenshot1](img/screenshot2.png)
 index component is momised (header and footer)
 Used memoisation to memoise the header and footer
+
+# public url
+
+[link](https://dulcet-strudel-3c7e77.netlify.app/)
