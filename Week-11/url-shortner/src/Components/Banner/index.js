@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import bannerImg from "../../images/undraw_link_shortener.svg";
 
 const index = () => {
@@ -13,4 +13,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default memo(index);
