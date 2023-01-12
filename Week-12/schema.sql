@@ -70,7 +70,24 @@ DROP TABLE IF EXISTS `ORDERS`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ORDERS` (
   `ONO` int DEFAULT NULL,
-  `ODATE` date DEFAULT NULL
+  `ODATE` date DEFAULT NULL,
+  `CO_ID` int DEFAULT NULL,
+  KEY `CO_ID` (`CO_ID`),
+  CONSTRAINT `ORDERS_ibfk_1` FOREIGN KEY (`CO_ID`) REFERENCES `CUSTOMER` (`CNO`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `ORDER_ITEM_LIST`
+--
+
+DROP TABLE IF EXISTS `ORDER_ITEM_LIST`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ORDER_ITEM_LIST` (
+  `customer` int DEFAULT NULL,
+  `orders` int DEFAULT NULL,
+  `item` int DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -104,6 +121,19 @@ CREATE TABLE `WAREHOUSES` (
   PRIMARY KEY (`WID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `WAREHOUSE_STORE_LIST`
+--
+
+DROP TABLE IF EXISTS `WAREHOUSE_STORE_LIST`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `WAREHOUSE_STORE_LIST` (
+  `wid` int DEFAULT NULL,
+  `sid` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -114,4 +144,4 @@ CREATE TABLE `WAREHOUSES` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-01-09 22:33:14
+-- Dump completed on 2023-01-12 10:23:27
